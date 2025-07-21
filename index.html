@@ -17,39 +17,58 @@
 		</nav>
 		<div class="container-fluid p-0"></div>
 			<div class="row gx-0">
-				<div class=" col-md-14">
+				<div class="col-xl-6 col-md-14 order-xl-4" id="scroll-center">
 					<img src="assets/about.jpg" alt="...">
 				</div>
-				<div class=" d-none d-xl-block">
-					<img src="assets/walk.gif" alt="...">
-				</div>
-				<div class="col-md-10 bgLGrey text-center">
+				<div class="col-xl-6 col-md-10 bgLGrey text-center order-xl-4">
 					<h2 class="blk"> Test </h2>
 				</div>
-				<div class="col-md-16 order-md-2">
+				<div class="col-xl-6 d-none d-xl-block order-xl-4">
+					<img src="assets/walk.gif" alt="...">
+				</div>
+				<div class="col-xl-11 col-md-16 order-md-2 order-xl-first">
 					<img src="assets/flip.gif" alt="...">
 				</div>
-				<div class="col-md-8 col-12 order-md-1">
+				<div class="col-xl-6 col-md-8 col-12 order-md-1 order-xl-3">
 					<img src="assets/collaborativeIcon.png" alt="...">
 				</div>
 				
-				<div class="col-md-10 col-12 order-md-2">
+				<div class="col-xl-5 col-md-5 col-12 order-md-2  order-xl-2">
 					<img src="assets/roverCrop.jpg" alt="...">
 				</div>
-				<div class="col-md-14 order-md-2">
+				<div class="col-xl-11 col-md-14 order-md-2 order-xl-5">
 					<img src="assets/chess.gif" alt="...">
 				</div>
-				<div class="col-md-6 col-10 order-md-2">
+				<div class="col-xl-5 col-md-6 col-10 order-md-2 order-xl-4">
 					<img src="assets/cube.gif" alt="...">
 				</div>
-				<div class="col-md-9 col-14 order-md-2">
+				<div class="col-xl-8 col-md-9 col-14 order-md-2 order-xl-5">
 					<img src="assets/rov.jpg" alt="...">
 				</div>
-				<div class="col-md-9 d-none d-md-block order-md-2">
+				<div class="col-xl-8 col-md-9 d-none d-md-block order-md-2 order-xl-1">
 					<img src="assets/crab.jpg" alt="...">
 				</div>
 			</div>
 		</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	
+	<script>
+        window.addEventListener('load', function() {
+            const centeredDiv = document.getElementById('scroll-center');
+            if (centeredDiv) {
+                // Calculate the position to scroll to center the div
+                const viewportHeight = window.innerHeight;
+                const elementRect = centeredDiv.getBoundingClientRect();
+                const scrollY = elementRect.top + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2);
+
+                window.scrollTo({
+                    top: scrollY,
+                    //behavior: 'smooth' // For smooth scrolling
+                });
+            }
+        });
+    </script>
+
+
 	</body>
 </html>

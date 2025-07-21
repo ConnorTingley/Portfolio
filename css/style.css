@@ -1,3 +1,9 @@
+html {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+
 body {
 	background-color: #C7C7C7;
 	font-family: 'Roboto Condensed';

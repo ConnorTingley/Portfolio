@@ -8,33 +8,41 @@
 		<title>Connor Tingley</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Dropdown link
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>
-				</ul>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Project name</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../navbar/">Default</a></li>
+						<li><a href="../navbar-static-top/">Static top</a></li>
+						<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
 		<div class="container-fluid p-0"></div>
@@ -79,23 +87,23 @@
 			</div>
 		</div>
 	
-	<script>
-        window.addEventListener('load', function() {
-            const centeredDiv = document.getElementById('scroll-center');
-            if (centeredDiv) {
-                // Calculate the position to scroll to center the div
-                const viewportHeight = window.innerHeight;
-                const elementRect = centeredDiv.getBoundingClientRect();
-                const scrollY = elementRect.top + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2);
+		<script>
+			window.addEventListener('load', function() {
+				const centeredDiv = document.getElementById('scroll-center');
+				if (centeredDiv) {
+					// Calculate the position to scroll to center the div
+					const viewportHeight = window.innerHeight;
+					const elementRect = centeredDiv.getBoundingClientRect();
+					const scrollY = elementRect.top + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2);
 
-                window.scrollTo({
-                    top: scrollY,
-                    //behavior: 'smooth' // For smooth scrolling
-                });
-            }
-        });
-    </script>
+					window.scrollTo({
+						top: scrollY,
+					});
+				}
+			});
+		</script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="../../dist/js/bootstrap.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 	</body>
 </html>

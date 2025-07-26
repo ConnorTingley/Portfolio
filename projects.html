@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link  href="css/style.css" rel="stylesheet">
+		<title>Connor Tingley</title>
+	</head>
+	<body>
+		<div class="container-fluid p-0 full-height">
+			<div class="row gx-0 grow-height">
+				<div class="col grow-height">
+					<img src="assets/crabWide.jpg" alt="...">
+				</div>
+			</div>
+
+		</div>
+		<div class="container-fluid p-0">
+			<!-- Biped -->
+			<div class="project-section">
+				<div class="row gx-0">
+					<div class="col-md-10 project-text-box">
+						<h1>Biped</h1>
+						<ul>
+							<li>A bipedal robot capable of high-mobility maneuvers in an uncertain environment</li>
+							<li>Uses reaction wheels for persistent control torque on the body and removes the need for ankle joints</li>
+							<ul>
+								<li>The wheel's angular momentum storage allows the robot to react to unexpected dynamics such as external forces or sim to real differences in any contact state, including those where no feet are on the ground</li>
+							</ul>
+							<li>Controlled by a novel, contact implicit model predictive controller</li>
+							<li>Does not use an explicit contact sequence, instead it optimizes contact along-side path planning</li>
+							<ul>
+								<li>The solver chooses the contact sequence that minimizes the cost function, instead of a predefined contact pattern</li>
+							</ul>
+							<li>Robot dynamics are paired with a custom, semi-rigid contact model</li>
+							<li>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage</li>
+							<li>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is explicitly designed for changing contact modes</li>
+						</ul>
+					</div>
+					<div class="col-md-14">
+						<img src="assets/walk.gif" alt="...">
+					</div>
+				</div>
+				<div class="row gx-0">
+					<div class="col image-spacer">
+
+					</div>
+					<div class="col-md-18">
+						<img src="assets/flip.gif" alt="...">
+					</div>
+					<div class="col image-spacer">
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- chess bot -->
+			<div class="project-section">
+				<div class="row gx-0">
+					<div class="col-md-14">
+						<video autoplay loop muted>
+							<source src="assets/chessbotC.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="col-md-10 project-text-box bgDGrey">
+						Chess Bot
+					</div>
+				</div>
+			</div>
+
+			<!-- gyro cube -->
+			<div class="project-section">
+				<div class="row gx-0">
+					<div class="col-md-10 project-text-box">
+						Gyro Cube
+					</div>
+					<div class="col-md-14">
+						<video autoplay loop muted>
+							<source src="assets/cuboDemo.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+				<div class="row gx-0">
+					<div class="col-md-7">
+						<img src="assets/cubeC.gif" alt="...">
+					</div>
+					<div class="col-md-17">
+						<img src="assets/crossEntropy.png" alt="...">
+					</div>
+				</div>
+			</div>
+			
+			<!-- collaborative robot -->
+			<div class="project-section">
+				<div class="row gx-0">
+					<div class="col-md-14">
+						<video autoplay loop muted>
+							<source src="assets/collaborative.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="col-md-10 project-text-box">
+						Collaborative Robot
+					</div>
+				</div>
+			</div>
+
+			<!-- rover -->
+			<div class="project-section">
+				<div class="row gx-0">
+					<div class="col-md-10 project-text-box bgDGrey">
+						Rover
+					</div>
+					<div class="col-md-14">
+						<div class="vstack">
+							<video autoplay loop muted>
+								<source src="assets/blocks.MOV" type="video/mp4"/>
+							</video>
+							<img src="assets/crawl.gif" alt="...">
+						</div>
+					</div>
+				</div>
+				<div class="row gx-0">
+					<div class="col-md-6">
+						<img src="assets/overhill.jpg" alt="...">
+					</div>
+					<div class="col-md-6">
+						<img src="assets/roverCrop.jpg" alt="...">
+					</div>
+					<div class="col-md-6">
+						<img src="assets/ditch.gif" alt="...">
+					</div>
+					<div class="col-md-6">
+						<img src="assets/cliff.png" alt="...">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	</body>
+</html>

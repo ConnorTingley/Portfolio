@@ -36,7 +36,23 @@ p {
 }
 
 .navbar{
-	min-height: 73px;
+	outline: 6px solid #1A1A1A;
+	outline-offset: -3px;
+	padding-top: 2px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+
+}
+
+@media (min-width: 768px) {
+	.navbarRow{
+		min-height: 73px;
+	}
+}
+
+.navbarCol{
+	height: auto;
 }
 
 .navbar-brand {
@@ -44,6 +60,7 @@ p {
 	font-size: 30px;
 	font-weight: 300;
 	margin-right: 0px;
+	font-weight: 300;
 }
 
 .nav-item {

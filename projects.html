@@ -9,30 +9,30 @@
 	</head>
 	<body>
 		<nav class="navbar sticky-top navbar-expand-sm navbar-light container-fluid">
-			<div class="row gx-0 w-100 align-items-center navbarRow flex-row d-flex align-items-sm-stretch p-0">
-				<div class="col-xl-8 col-md-10 col-sm-11 bgLGrey text-center d-flex align-items-center navbarH">
-					<a class="navbar-brand w-100" href="javascript:void(0)">Connor Tingley</a>
-					<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-				<div class="col-xl-16 col-md-14 col-sm-13 bgBeige d-flex align-items-center">
-					<div class="collapse navbar-collapse" id="mynavbar">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0)">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0)">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0)">Projects</a>
-							</li>
-						</ul>
-					</div>
+		<div class="row gx-0 w-100 align-items-center navbarRow flex-row d-flex align-items-sm-stretch p-0">
+			<div class="col-xl-8 col-md-10 col-sm-11 bg-lgrey text-center d-flex align-items-center navbar-h">
+				<a class="navbar-brand w-100" href="javascript:void(0)">Connor Tingley</a>
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="col-xl-16 col-md-14 col-sm-13 bg-beige d-flex align-items-center">
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">Projects</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</nav>
 		<div class="container-fluid p-0 full-height">
 			<div class="row gx-0 grow-height">
 				<div class="col grow-height">
@@ -45,25 +45,23 @@
 			<!-- Biped -->
 			<div class="project-section">
 				<div class="row gx-0">
-					<div class="col-md-10 project-text-box">
+					<div class="col-md-11 project-text-box">
 						<h1>Biped</h1>
-						<ul>
-							<li>A bipedal robot capable of high-mobility maneuvers in an uncertain environment</li>
-							<li>Uses reaction wheels for persistent control torque on the body and removes the need for ankle joints</li>
+							<p>This is a bipedal robot capable of high-mobility maneuvers in an uncertain environment.</p>
+							Reaction wheels are integrated into the body for persistent control torque independent of foot contact.</p>
 							<ul>
-								<li>The wheel's angular momentum storage allows the robot to react to unexpected dynamics such as external forces or sim to real differences in any contact state, including those where no feet are on the ground</li>
+								<li>The wheels store angular momentum allowing the robot to react to unexpected dynamics such as external forces or sim to real differences even when no feet are on the ground.</li>
 							</ul>
-							<li>Controlled by a novel, contact implicit model predictive controller</li>
-							<li>Does not use an explicit contact sequence, instead it optimizes contact along-side path planning</li>
+							<p>My robot is controlled by a novel, contact implicit model predictive controller.</p>
+							<p>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.</p>
+							<p>Robot dynamics are calculated with a custom, semi-rigid contact model.</p>
+							<p>An explicit contact sequence is not used; instead, contact is optimized along-side path planning.</p>
 							<ul>
-								<li>The solver chooses the contact sequence that minimizes the cost function, instead of a predefined contact pattern</li>
+								<li>The solver chooses the contact sequence that minimizes the cost function, instead of a predefined contact pattern.</li>
 							</ul>
-							<li>Robot dynamics are paired with a custom, semi-rigid contact model</li>
-							<li>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage</li>
-							<li>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is explicitly designed for changing contact modes</li>
-						</ul>
+							<p>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is explicitly designed around changing contact modes.</p>
 					</div>
-					<div class="col-md-14">
+					<div class="col-md-13">
 						<img src="assets/walk.gif" alt="...">
 					</div>
 				</div>
@@ -89,7 +87,7 @@
 							<source src="assets/chessbotC.mp4" type="video/mp4" />
 						</video>
 					</div>
-					<div class="col-md-10 project-text-box bgDGrey">
+					<div class="col-md-10 project-text-box bg-dgrey">
 						Chess Bot
 					</div>
 				</div>
@@ -134,7 +132,7 @@
 			<!-- rover -->
 			<div class="project-section">
 				<div class="row gx-0">
-					<div class="col-md-10 project-text-box bgDGrey">
+					<div class="col-md-10 project-text-box bg-dgrey">
 						Rover
 					</div>
 					<div class="col-md-14">

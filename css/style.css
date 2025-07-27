@@ -45,14 +45,18 @@ p {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 	.navbarRow{
-		min-height: 73px;
+		min-height: 75px;
 	}
 }
 
 .navbarCol{
 	height: auto;
+}
+
+.navbarH{
+	min-height: 75px;
 }
 
 .navbar-brand {
@@ -138,7 +142,7 @@ video {
 
 .full-height{
 	display: flex;
-	height: 100vh;
+	height: calc(100vh - 75px);
 	flex-direction: column;
 }
 

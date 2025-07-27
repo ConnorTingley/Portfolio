@@ -1,101 +1,101 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link  href="css/style.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-		<title>Connor Tingley</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-		<a class="navbar-brand" href="javascript:void(0)">Logo</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="mynavbar">
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="javascript:void(0)">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="javascript:void(0)">About</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Biped</a></li>
-						<li><a class="dropdown-item" href="#">Chess Bot</a></li>
-						<li><a class="dropdown-item" href="#">Gyro Cube</a></li>
-						<li><a class="dropdown-item" href="#">Collaborative Robot</a></li>
-						<li><a class="dropdown-item" href="#">Rover</a></li>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<title>Connor Tingley</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-light p-0 container-fluid">
+		<div class="row gx-0 w-100 h-100">
+			<div class="col-lg-8 col-md-10 col-sm-11 bgLGrey text-center">
+				<a class="navbar-brand" href="javascript:void(0)">Connor Tingley</a>
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="col-lg-16 col-md-14 col-sm-13 bgBeige">
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)">Projects</a>
+						</li>
 					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-		<div class="container-fluid p-0"></div>
-			<div class="row gx-0">
-				<div class="col-xl-6 col-md-14 order-xl-5" id="scroll-center">
-					<img src="assets/about.jpg" alt="...">
-				</div>
-				<div class="col-xl-6 col-md-10 order-xl-4 bgLGrey text-center centered-container">
-					<div class="about-text">
-						<h2> Connor Tingley </h2>
-						<h4> Dynamics, </h2>
-						<h4> Mechanics, </h2>
-						<h4> & Controls </h2>
-						<h2> for Robots </h2>
-					</div>
-				</div>
-				<div class="col-xl-6 d-none d-xl-block order-xl-5">
-					<img src="assets/walk.gif" alt="...">
-				</div>
-				<div class="col-xl-11 col-md-16 order-md-2 order-xl-first">
-					<img src="assets/flip.gif" alt="...">
-				</div>
-				<div class="col-xl-6 col-md-8 col-12 order-md-1 order-xl-3">
-					<img src="assets/collaborativeIcon.png" alt="...">
-				</div>
-				
-				<div class="col-xl-5 col-md-10 col-12 order-md-2  order-xl-2">
-					<img src="assets/roverCrop.jpg" alt="...">
-				</div>
-				<div class="col-xl-11 col-md-14 order-md-2 order-xl-last">
-					<img src="assets/chess.gif" alt="...">
-				</div>
-				<div class="col-xl-5 col-md-6 col-10 order-md-2 order-xl-5">
-					<img src="assets/cube.gif" alt="...">
-				</div>
-				<div class="col-xl-8 col-md-9 col-14 order-md-2 order-xl-last">
-					<img src="assets/rov.jpg" alt="...">
-				</div>
-				<div class="col-xl-8 col-md-9 d-none d-md-block order-md-2 order-xl-1">
-					<img src="assets/crab.jpg" alt="...">
 				</div>
 			</div>
 		</div>
-	
-		<script>
-			window.addEventListener('load', function() {
-				const centeredDiv = document.getElementById('scroll-center');
-				if (centeredDiv) {
-					// Calculate the position to scroll to center the div
-					const viewportHeight = window.innerHeight;
-					const elementRect = centeredDiv.getBoundingClientRect();
-					const scrollY = elementRect.top + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2);
+	</nav>
+	<div class="container-fluid p-0"></div>
+	<div class="row gx-0">
+		<div class="col-xl-6 col-md-14 order-xl-5" id="scroll-center">
+			<img src="assets/about.jpg" alt="...">
+		</div>
+		<div class="col-xl-6 col-md-10 order-xl-4 bgLGrey text-center centered-container">
+			<div class="about-text">
+				<h2> Connor Tingley </h2>
+				<h4> Dynamics, </h2>
+					<h4> Mechanics, </h2>
+						<h4> & Controls </h2>
+							<h2> for Robots </h2>
+			</div>
+		</div>
+		<div class="col-xl-6 d-none d-xl-block order-xl-5">
+			<img src="assets/walk.gif" alt="...">
+		</div>
+		<div class="col-xl-11 col-md-16 order-md-2 order-xl-first">
+			<img src="assets/flip.gif" alt="...">
+		</div>
+		<div class="col-xl-6 col-md-8 col-12 order-md-1 order-xl-3">
+			<img src="assets/collaborativeIcon.png" alt="...">
+		</div>
 
-					window.scrollTo({
-						top: scrollY,
-					});
-				}
-			});
-		</script>
-		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-		<script src="../../dist/js/bootstrap.min.js"></script>
+		<div class="col-xl-5 col-md-10 col-12 order-md-2  order-xl-2">
+			<img src="assets/roverCrop.jpg" alt="...">
+		</div>
+		<div class="col-xl-11 col-md-14 order-md-2 order-xl-last">
+			<img src="assets/chess.gif" alt="...">
+		</div>
+		<div class="col-xl-5 col-md-6 col-10 order-md-2 order-xl-5">
+			<img src="assets/cube.gif" alt="...">
+		</div>
+		<div class="col-xl-8 col-md-9 col-14 order-md-2 order-xl-last">
+			<img src="assets/rov.jpg" alt="...">
+		</div>
+		<div class="col-xl-8 col-md-9 d-none d-md-block order-md-2 order-xl-1">
+			<img src="assets/crab.jpg" alt="...">
+		</div>
+	</div>
+	</div>
 
-	</body>
+	<script>
+		window.addEventListener('load', function () {
+			const centeredDiv = document.getElementById('scroll-center');
+			if (centeredDiv) {
+				// Calculate the position to scroll to center the div
+				const viewportHeight = window.innerHeight;
+				const elementRect = centeredDiv.getBoundingClientRect();
+				const scrollY = elementRect.top + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2);
+
+				window.scrollTo({
+					top: scrollY,
+				});
+			}
+		});
+	</script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="../../dist/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>

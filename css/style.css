@@ -6,27 +6,26 @@ html {
 
 body {
 	background-color: #C7C7C7;
-	font-family: 'Roboto Condensed';
 	box-sizing: border-box;
 }
 
 h1 {
 	color: #F2F2F2;
 	font-size: 36px;
-	font-weight: 300;
+	font-weight: 200;
 	margin-top: 12px;
 	margin-bottom: 24px;
 }
 
 h2 {
-	color: #1A1A1A;
+	color: #443B36;
 	font-size: min(36px, 9cqw);
-	font-weight: 300;
+	font-weight: 200;
 	margin: 24px;
 }
 
 h4 {
-	color: #1A1A1A;
+	color: #77685F;
 	font-size: min(30px, 7.5cqw);
 	font-weight: 200;
 	margin: 12px;
@@ -41,14 +40,14 @@ p{
 }
 
 .project-text-box{
-	background-color: #43585F;
+	background-color: #F7F0E8;
 	padding: 3cqw;
 	padding-top: 3cqw;
 	container-type: inline-size;
 }
 
 .navbar{
-	outline: 6px solid #1A1A1A;
+	outline: 6px solid #443B36;
 	outline-offset: -3px;
 	padding-top: 2px !important;
 	padding-bottom: 0px !important;
@@ -67,7 +66,7 @@ p{
 }
 
 .navbar-brand {
-	color: #1A1A1A;
+	color: #77685F;
 	font-size: min(30px, 9cqw);
 	font-weight: 300;
 	margin-right: 0px;
@@ -96,7 +95,7 @@ img {
 	min-height:100%;
 	height: auto;
 	width:auto;
-	outline: 3px solid #1A1A1A;
+	outline: 3px solid #443B36;
 	outline-offset: -3px;
 }
 
@@ -106,12 +105,12 @@ video {
 	min-height:100%;
 	height: auto;
 	width:auto;
-	outline: 3px solid #1A1A1A;
+	outline: 3px solid #443B36;
 	outline-offset: -3px;
 }
 
 .row > div {
-	outline: 3px solid #1A1A1A;
+	outline: 3px solid #443B36;
 	outline-offset: -3px;
 	background-size: cover;
 }
@@ -133,48 +132,37 @@ video {
 }
 
 .image-spacer{
-	background-color: #5A7A81;
+	background-color: #77685F;
 }
 
 .about-text{
 	container-type: inline-size;
 }
 
-
-
-
-.blk {
-	color: #1A1A1A;
+.bg-d0 {
+	background-color: #77685F !important;
 }
 
-.bg-black {
-	background-color: #1A1A1A !important;
+.bg-d1 {
+	background-color: #A38F7D !important;
 }
 
-.bg-dgrey {
-	background-color: #6E6E6E !important;
+.bg-d2 {
+	background-color: #CDB8A3 !important;
 }
 
-.bg-mgrey {
-	background-color: #C7C7C7 !important;
+.bg-l3 {
+	background-color: #E4D4C3 !important;
 }
 
-.bg-lgrey {
-	background-color: #F2F2F2 !important;
+.bg-l2 {
+	background-color: #EEE2D6 !important;
 }
 
-.bgwhite {
-	background-color: #FFFFFF !important;
+.bg-l1{
+	background-color: #F7F0E8 !important;
 }
 
-.bg-lblue {
-	background-color: #5A7A81 !important;
-}
-
-.bg-dblue{
-	background-color: #43585F !important;
-}
-
-.bg-beige{
-	background-color: #DED7CF !important;
+.bg-l0{
+	background-color: #FAF5F0 !important;
 }

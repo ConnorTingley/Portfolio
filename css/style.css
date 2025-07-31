@@ -10,9 +10,9 @@ body {
 }
 
 h1 {
-	color: #F2F2F2;
+	color: #77685F;
 	font-size: 36px;
-	font-weight: 200;
+	font-weight: 400;
 	margin-top: 12px;
 	margin-bottom: 24px;
 }
@@ -25,7 +25,7 @@ h2 {
 }
 
 h4 {
-	color: #77685F;
+	color: #5E524B;
 	font-size: min(30px, 7.5cqw);
 	font-weight: 200;
 	margin: 12px;
@@ -33,17 +33,24 @@ h4 {
 
 ul{
 	margin-bottom: 0px;
+	padding-left: 18px;
+	list-style-type: '- ';
 }
 
-p{
+li{
+	margin-bottom: 0.5rem;
+	line-height: 125%;
 	/*font-size: 6cqw;*/
+}
+@media (min-width: 576px) {
+	font-size:
 }
 
 .project-text-box{
 	background-color: #F7F0E8;
-	padding: 3cqw;
-	padding-top: 3cqw;
+	padding: calc(3cqw + 5px);
 	container-type: inline-size;
+	color: #5E524B;
 }
 
 .navbar{

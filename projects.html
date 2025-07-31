@@ -45,23 +45,25 @@
 			<!-- Biped -->
 			<div class="project-section">
 				<div class="row gx-0">
-					<div class="col-md-11 project-text-box">
+					<div class="col-xl-11 col-md-13 project-text-box">
 						<h1>Biped</h1>
-							<p>This is a bipedal robot capable of high-mobility maneuvers in an uncertain environment.</p>
-							Reaction wheels are integrated into the body for persistent control torque independent of foot contact.</p>
+						<ul>
+							<li> This is a bipedal robot capable of high-mobility maneuvers in an uncertain environment.</li>
+							<li> Reaction wheels are integrated into the body for persistent control torque independent of foot contact.</li>
 							<ul>
 								<li>The wheels store angular momentum allowing the robot to react to unexpected dynamics such as external forces or sim to real differences even when no feet are on the ground.</li>
 							</ul>
-							<p>My robot is controlled by a novel, contact implicit model predictive controller.</p>
-							<p>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.</p>
-							<p>Robot dynamics are calculated with a custom, semi-rigid contact model.</p>
-							<p>An explicit contact sequence is not used; instead, contact is optimized along-side path planning.</p>
+							<li> My robot is controlled by a novel, contact implicit model predictive controller.</li>
+							<li> A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.</li>
+							<li> Robot dynamics are calculated with a custom, semi-rigid contact model.</li>
+							<li> An explicit contact sequence is not used; instead, contact is optimized along-side path planning.</li>
 							<ul>
 								<li>The solver chooses the contact sequence that minimizes the cost function, instead of a predefined contact pattern.</li>
 							</ul>
-							<p>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is explicitly designed around changing contact modes.</p>
-					</div>
-					<div class="col-md-13">
+							<li> Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is explicitly designed around changing contact modes.</li>
+						</ul>
+						</div>
+					<div class="col-xl-13 col-md-11">
 						<img src="assets/walk.gif" alt="...">
 					</div>
 				</div>

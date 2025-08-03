@@ -48,46 +48,42 @@
 		<!-- Biped -->
 		<div class="project-section">
 			<div class="row gx-0">
-				<div class="col-xl-11 col-md-13 project-text-box">
+				<div class="col-xl-11 col-lg-13 project-text-box">
 					<h1>Biped</h1>
 					<ul>
-						<li> This is a bipedal robot capable of high-mobility maneuvers in an uncertain environment.
+						<li>This is a bipedal robot capable of high-mobility maneuvers in an uncertain environment.
 						</li>
-						<li> Reaction wheels are integrated into the body for persistent control torque independent of
+						<li>Reaction wheels are integrated into the body for persistent control torque independent of
 							foot contact.</li>
 						<ul>
 							<li>The wheels store angular momentum allowing the robot to react to unexpected dynamics
 								such as external forces or sim to real differences even when no feet are on the ground.
 							</li>
 						</ul>
-						<li> My robot is controlled by a novel, contact implicit model predictive controller.</li>
-						<li> A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.
+						<li>My robot is controlled by a novel, contact implicit model predictive controller.</li>
+						<li>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.
 						</li>
-						<li> Robot dynamics are calculated with a custom, semi-rigid contact model.</li>
-						<li> An explicit contact sequence is not used; instead, contact is optimized along-side path
+						<li>Robot dynamics are calculated with a custom, semi-rigid contact model.</li>
+						<li>An explicit contact sequence is not used; instead, contact is optimized along-side path
 							planning.</li>
 						<ul>
 							<li>The solver chooses the contact sequence that minimizes the cost function, instead of a
 								predefined contact pattern.</li>
 						</ul>
-						<li> Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is
+						<li>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is
 							explicitly designed around changing contact modes.</li>
 					</ul>
 				</div>
-				<div class="col-xl-13 col-md-11">
+				<div class="col-xl-13 col-lg-11">
 					<img src="assets/walk.gif" alt="...">
 				</div>
 			</div>
 			<div class="row gx-0">
-				<div class="col image-spacer">
-
-				</div>
-				<div class="col-md-18">
+				<div class="col image-spacer"></div>
+				<div class="col-xl-18 col-lg-21">
 					<img src="assets/flip.gif" alt="...">
 				</div>
-				<div class="col image-spacer">
-
-				</div>
+				<div class="col image-spacer"></div>
 			</div>
 		</div>
 
@@ -95,13 +91,35 @@
 		<!-- chess bot -->
 		<div class="project-section">
 			<div class="row gx-0">
-				<div class="col-md-14">
-					<video autoplay loop muted>
-						<source src="assets/chessbotC.mp4" type="video/mp4" />
-					</video>
+				<div class="col-lg-14 d-flex flex-column">
+					<div class="vstack flex-grow-1 chess-div">
+						<div class="col image-spacer flex-grow-1"></div>
+						<video autoplay loop muted class="mh-0">
+							<source src="assets/chessbotC.mp4" type="video/mp4" />
+						</video>
+						<div class="col image-spacer flex-grow-1"></div>
+					</div>
 				</div>
-				<div class="col-md-10 project-text-box bg-d2">
-					Chess Bot
+				<div class="col-lg-10 project-text-box bg-d2">
+					<h1>Chess Bot</h1>
+					<ul>
+						<li>Chess Bot is a controller that allows a Panda Arm to play chess.</li>
+						<li>It uses task space control for smooth and efficient motion planning.</li>
+						<li>Inverse dynamics of the arm are calculated every step for feed-forward torques.</li>
+						<li>Real-time feedback loops make the controller robust to environmental uncertainty.</li>
+						<li>Grip is controlled using force feedback.</li>
+						<li>Stockfish integration gives the arm the optimal move to play.</li>
+						<li>A simple computer vision script estimates the board state using April tags on the pieces.
+						</li>
+					</ul>
+					<h3>My Contribution</h3>
+					<ul>
+						<li>Designing the path planning algorithm</li>
+						<li>Feed-forward dynamics calculations</li>
+						<li>Object manipulation</li>
+						<li>Team size: 3</li>
+					</ul>
+
 				</div>
 			</div>
 		</div>
@@ -109,13 +127,37 @@
 		<!-- gyro cube -->
 		<div class="project-section">
 			<div class="row gx-0">
-				<div class="col-md-10 project-text-box">
-					Gyro Cube
+				<div class="col-lg-10 project-text-box">
+					<h1>Gyro Cube</h1>
+					<ul>
+						<li>Gyro Cube is a cube-shaped robot controlled with internal gyroscopes similar to ETH
+							Zürich's Cubli.</li>
+						<li>Cross-entropy policy search is used to efficiently compute the optimal trajectory for the
+							look-ahead period.</li>
+						<ul>
+							<li>70 simulated rollouts estimate a gaussian fit of the cost function</li>
+							<li>New control inputs are chosen by sampling this gaussian distribution</li>
+							<li>The sample converges to an optimal trajectory by iterating through these 2 steps</li>
+						</ul>
+						<li>A custom cost function rewards pose matching and efficient movement while penalizing
+							reaction wheel saturation.</li>
+					</ul>
+					<h3>My Contribution</h3>
+					<ul>
+						<li>Creating and optimizing the simulated rollout transition function</li>
+						<li>Implementing the cross-entropy search algorithm</li>
+						<li>Designing and tuning the reward functions</li>
+						<li>Team size: 3</li>
+					</ul>
 				</div>
-				<div class="col-md-14">
-					<video autoplay loop muted>
-						<source src="assets/cuboDemo.mp4" type="video/mp4" />
-					</video>
+				<div class="col-lg-14 d-flex flex-column">
+					<div class="vstack flex-grow-1">
+						<div class="col image-spacer flex-grow-1"></div>
+						<video autoplay loop muted class="mh-0">
+							<source src="assets/cuboDemo.mp4" type="video/mp4" />
+						</video>
+						<div class="col image-spacer flex-grow-1"></div>
+					</div>
 				</div>
 			</div>
 			<div class="row gx-0">
@@ -131,13 +173,49 @@
 		<!-- collaborative robot -->
 		<div class="project-section">
 			<div class="row gx-0">
-				<div class="col-md-14">
-					<video autoplay loop muted>
+				<div class="col-md-24 project-text-box bg-d2">
+					<h1>Collaborative Robot</h1>
+					<ul>
+						<li>This collaborative controller allows a Trossen Robotics' Locobot to complete a simple
+							sorting task with other robots without directly communicating.</li>
+						<li>Task:</li>
+						<ul>
+							<li>Multiple robots are deployed onto a course scattered with many colored blocks (red,
+								yellow, green, and blue).</li>
+							<li>Three circles denote stations where specific block colors are to be gathered to fit
+								a given recipe.</li>
+							<li>The catch is that the recipes are not designated to a particular station, meaning
+								that robots must agree on which station gets which recipe without directly
+								communicating.</li>
+							<li>For more information check out:
+								https://sites.google.com/stanford.edu/me-326-final-project-team-2/problem-statement</li>
+						</ul>
+						<li>A custom perception algorithm takes depth camera data and detects blocks, their colors,
+							stations, and obstacles using a probabilistic occupancy grid.</li>
+						<li>The system tracks the state of the stations to observe how other robots place blocks.</li>
+						<li>This allows the controller to estimate what the other robots believe about the station
+							recipes and choose the block move that gives the highest expected value in the least amount
+							of time.</li>
+						<li>Drive paths are continuously calculated to avoid obstacles and other robots.</li>
+						<li>An arm controller uses the depth camera to locate, grab, and deposit blocks.</li>
+						<li>Read more on our project website:
+							https://sites.google.com/stanford.edu/me-326-final-project-team-2/home</li>
+					</ul>
+					<h3>My Contribution</h3>
+					<ul>
+						<li>The perception module and occupancy grid</li>
+						<li>The belief estimator</li>
+						<li>The drive controller</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-24 d-flex flex-column">
+				<div class="vstack flex-grow-1">
+					<div class="col image-spacer flex-grow-1"></div>
+					<video autoplay loop muted class="mh-0">
 						<source src="assets/collaborative.mp4" type="video/mp4" />
 					</video>
-				</div>
-				<div class="col-md-10 project-text-box bg-d2">
-					Collaborative Robot
+					<div class="col image-spacer flex-grow-1"></div>
 				</div>
 			</div>
 		</div>
@@ -145,15 +223,46 @@
 		<!-- rover -->
 		<div class="project-section">
 			<div class="row gx-0">
-				<div class="col-md-10 project-text-box bg-dgrey">
-					Rover
+				<div class="col-lg-10 project-text-box bg-dgrey">
+					<h1>Mars Rover</h1>
+					<ul>
+						<li>I designed the chassis and suspension for Stanford's URC team.</li>
+						<li>The suspension consists of a series of linkages that set the height of the rover's six
+							wheels
+							in response to changing terrain below the rover.</li>
+						<li>The linkages form a mechanical controller that optimizes the weight distribution between the
+							wheels to allow the rover to glide over large obstacles.</li>
+						<ul>
+							<li>The mechanical advantage of the linkages change with height, allocating more weight
+								from lower to higher-positioned wheels.</li>
+							<li>Weight is moved away from wheels that need to climb up an obstacle to wheels that have
+								already climbed that obstacle.</li>
+						</ul>
+						<li>Unlike a spring-based suspension, this chassis has a well-constrained configuration for a
+							given
+							ground curvature.</li>
+						<ul>
+							<li>Changing forces on the chassis do not induce movement in the suspension.</li>
+							<li>This results in a rigid platform for the arm to operate off of.</li>
+						</ul>
+					</ul>
+					<h3>My Contribution</h3>
+					<ul>
+						<li>This is a novel suspension that I invented, designed, and fabricated.</li>
+						<li>While this rover was the work of a team of around 8 people, this chassis was solely my
+							responsibility.</li>
+						<li>Team size: 8</li>
+					</ul>
 				</div>
-				<div class="col-md-14">
-					<div class="vstack">
-						<video autoplay loop muted>
+				<div class="col-lg-14 d-flex flex-column">
+					<div class="vstack flex-grow-1">
+						<div class="col image-spacer flex-grow-1"></div>
+						<video autoplay loop muted class="mh-0">
 							<source src="assets/blocks.MOV" type="video/mp4" />
 						</video>
-						<img src="assets/crawl.gif" alt="...">
+						<div class="col image-spacer flex-grow-1"></div>
+						<img src="assets/crawl.gif" alt="..." class="mh-0">
+						<div class="col image-spacer flex-grow-1"></div>
 					</div>
 				</div>
 			</div>

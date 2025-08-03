@@ -17,11 +17,26 @@ h1 {
 	margin-bottom: 24px;
 }
 
+.bg-d2 .h1{
+	color: #443B36;
+}
+
 h2 {
 	color: #443B36;
 	font-size: min(36px, 9cqw);
 	font-weight: 200;
 	margin: 24px;
+}
+
+h3 {
+	color: #77685F;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 24px;
+	margin-bottom: 12px;
+}
+.bg-d2 .h3{
+	color: #443B36;
 }
 
 h4 {
@@ -40,10 +55,6 @@ ul{
 li{
 	margin-bottom: 0.5rem;
 	line-height: 125%;
-	/*font-size: 6cqw;*/
-}
-@media (min-width: 576px) {
-	font-size:
 }
 
 .project-text-box{
@@ -51,6 +62,10 @@ li{
 	padding: calc(3cqw + 5px);
 	container-type: inline-size;
 	color: #5E524B;
+}
+
+.bg-d2 .project-text-box{
+	color: #443B36;
 }
 
 .navbar{
@@ -106,6 +121,10 @@ img {
 	outline-offset: -3px;
 }
 
+.mh-0{
+	min-height:0;
+}
+
 video {
 	object-fit: cover;
 	max-width:100%;
@@ -139,11 +158,22 @@ video {
 }
 
 .image-spacer{
-	background-color: #77685F;
+	background-color: #a38f7d;
+	outline: 3px solid #443B36;
+	outline-offset: -3px;
 }
 
 .about-text{
 	container-type: inline-size;
+}
+
+.chess-div{
+	outline: 3px solid #443B36;
+	outline-offset: -3px;
+}
+.chess-div * {
+	background-color: #000000;
+	outline: 0px;
 }
 
 .bg-d0 {

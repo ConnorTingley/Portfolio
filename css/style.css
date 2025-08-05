@@ -51,6 +51,14 @@ h4 {
 	margin: 12px;
 }
 
+h5 {
+	color: #77685F;
+	font-size: max(20px, 1.5vw);
+	font-weight: 400;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
 ul {
 	margin-bottom: 0px;
 	padding-left: 18px;
@@ -167,7 +175,7 @@ video {
 
 .full-height {
 	display: flex;
-	height: calc(100vh - 75px);
+	height: calc(100vh - 77px);
 	flex-direction: column;
 }
 
@@ -207,7 +215,7 @@ video {
 }
 
 .crab-element {
-	height: max(calc(100vh - 75px), calc(100vw / 2.1914));
+	height: max(calc(100vh - 69px), calc(100vw / 2.1914));
 }
 
 .project-header {

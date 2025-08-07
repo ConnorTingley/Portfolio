@@ -76,6 +76,11 @@ li {
 	padding: calc(3cqw + 5px);
 	container-type: inline-size;
 	color: #5E524B;
+	word-wrap: break-word;
+}
+
+.indent {
+	margin-left: calc(3cqw + 5px)
 }
 
 .bg-d2.project-text-box {
@@ -145,6 +150,14 @@ li {
 	margin-left: 10px;
 	margin-right: 10px;
 	background-color: #FDFAF8;
+}
+
+.image-caption {
+	position: absolute;
+	right: 3%;
+	bottom: 3%;
+	font-size: calc(1cqw + 8px);
+	color: #443B36;
 }
 
 img {

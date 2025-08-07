@@ -82,6 +82,8 @@
 						</ul>
 						<li>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is
 							explicitly designed around changing contact modes.</li>
+						<li>This is a solo project that I have been working on in my spare time for the last 1.5 years.
+						</li>
 					</ul>
 				</div>
 				<div class="col-xl-13 col-lg-11">
@@ -90,8 +92,9 @@
 			</div>
 			<div class="row gx-0">
 				<div class="col image-spacer"></div>
-				<div class="col-xl-18 col-lg-21">
+				<div class="col-xl-18 col-lg-21 position-relative">
 					<img src="assets/flip.gif" alt="...">
+					<div class="image-caption">0.33x Speed</div>
 				</div>
 				<div class="col image-spacer"></div>
 			</div>
@@ -115,7 +118,7 @@
 					<ul>
 						<li>Chess Bot is a controller that allows a Panda Arm to play chess.</li>
 						<li>It uses task space control for smooth and efficient motion planning.</li>
-						<li>Inverse dynamics of the arm are calculated every step for feed-forward torques.</li>
+						<li>Inverse dynamics of the arm are calculated every step to generate feed-forward torques.</li>
 						<li>Real-time feedback loops make the controller robust to environmental uncertainty.</li>
 						<li>Grip is controlled using force feedback.</li>
 						<li>Stockfish integration gives the arm the optimal move to play.</li>
@@ -145,9 +148,9 @@
 						<li>Cross-entropy policy search is used to efficiently compute the optimal trajectory for the
 							look-ahead period.</li>
 						<ul>
-							<li>70 simulated rollouts estimate a gaussian fit of the cost function</li>
-							<li>New control inputs are chosen by sampling this gaussian distribution</li>
-							<li>The sample converges to an optimal trajectory by iterating through these 2 steps</li>
+							<li>70 simulated rollouts estimate a gaussian fit of the cost function.</li>
+							<li>New control inputs are chosen by sampling this gaussian distribution.</li>
+							<li>The sample converges to an optimal trajectory by iterating through these 2 steps.</li>
 						</ul>
 						<li>A custom cost function rewards pose matching and efficient movement while penalizing
 							reaction wheel saturation.</li>
@@ -186,8 +189,8 @@
 				<div class="col-md-24 project-text-box bg-d2">
 					<h1>Collaborative Robot</h1>
 					<ul>
-						<li>This collaborative controller allows a Trossen Robotics' Locobot to complete a simple
-							sorting task with other robots without directly communicating.</li>
+						<li>This collaborative controller runs a Trossen Robotics' Locobot to complete a simple
+							sorting task with other robots, without directly communicating.</li>
 						<li>Task:</li>
 						<ul>
 							<li>Multiple robots are deployed onto a course scattered with many colored blocks (red,

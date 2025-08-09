@@ -68,20 +68,21 @@
 							foot contact.</li>
 						<ul>
 							<li>The wheels store angular momentum allowing the robot to react to unexpected dynamics
-								such as external forces or sim to real differences even when no feet are on the ground.
+								such as external forces or sim-to-real differences even when no feet are on the ground.
 							</li>
 						</ul>
-						<li>My robot is controlled by a novel, contact implicit model predictive controller.</li>
+						<li>My robot is controlled by a novel, contact-implicit model predictive controller.</li>
 						<li>A custom cost function balances path accuracy, reaction wheel saturation, and energy usage.
 						</li>
 						<li>Robot dynamics are calculated with a custom, semi-rigid contact model.</li>
-						<li>An explicit contact sequence is not used; instead, contact is optimized along-side path
+						<li>An explicit contact sequence is not used; instead, contact is optimized alongside path
 							planning.</li>
 						<ul>
 							<li>The solver chooses the contact sequence that minimizes the cost function, instead of a
 								predefined contact pattern.</li>
 						</ul>
-						<li>Currently uses the Crocoddyl library's FDDP solver, though I am working on a solver that is
+						<li> The numerical opimization is performed by the Crocoddyl library's FDDP solver, though I am
+							working on a solver that is
 							explicitly designed around changing contact modes.</li>
 						<li>This is a solo project that I have been working on in my spare time for the last 1.5 years.
 						</li>
@@ -119,7 +120,8 @@
 					<ul>
 						<li>Chess Bot is a controller that allows a Panda Arm to play chess.</li>
 						<li>It uses task space control for smooth and efficient motion planning.</li>
-						<li>Inverse dynamics of the arm are calculated every step to generate feed-forward torques.</li>
+						<li>Inverse dynamics of the arm are calculated at every step to generate feed-forward torques.
+						</li>
 						<li>Real-time feedback loops make the controller robust to environmental uncertainty.</li>
 						<li>Grip is controlled using force feedback.</li>
 						<li>Stockfish integration gives the arm the optimal move to play.</li>
@@ -150,7 +152,7 @@
 							look-ahead period.</li>
 						<ul>
 							<li>70 simulated rollouts estimate a gaussian fit of the cost function.</li>
-							<li>New control inputs are chosen by sampling this gaussian distribution.</li>
+							<li>New control inputs are chosen by sampling this Gaussian distribution.</li>
 							<li>The sample converges to an optimal trajectory by iterating through these 2 steps.</li>
 						</ul>
 						<li>A custom cost function rewards pose matching and efficient movement while penalizing
@@ -201,8 +203,10 @@
 							<li>The catch is that the recipes are not designated to a particular station, meaning
 								that robots must agree on which station gets which recipe without directly
 								communicating.</li>
-							<li>For more information check out:
-								https://sites.google.com/stanford.edu/me-326-final-project-team-2/problem-statement</li>
+							<li>For more information check out our <a
+									href="https://sites.google.com/stanford.edu/me-326-final-project-team-2/problem-statement"
+									target="_blank">problem-statement </a>
+							</li>
 						</ul>
 						<li>A custom perception algorithm takes depth camera data and detects blocks, their colors,
 							stations, and obstacles using a probabilistic occupancy grid.</li>
@@ -212,14 +216,17 @@
 							of time.</li>
 						<li>Drive paths are continuously calculated to avoid obstacles and other robots.</li>
 						<li>An arm controller uses the depth camera to locate, grab, and deposit blocks.</li>
-						<li>Read more on our project website:
-							https://sites.google.com/stanford.edu/me-326-final-project-team-2/home</li>
+						<li>Read more on our <a
+								href="https://sites.google.com/stanford.edu/me-326-final-project-team-2/home"
+								target="_blank">project website</a>
+						</li>
 					</ul>
 					<h3>My Contribution</h3>
 					<ul>
 						<li>The perception module and occupancy grid</li>
 						<li>The belief estimator</li>
 						<li>The drive controller</li>
+						<li>Team size: 4</li>
 					</ul>
 				</div>
 			</div>
@@ -240,7 +247,8 @@
 				<div class="col-lg-10 project-text-box bg-dgrey">
 					<h1>Mars Rover</h1>
 					<ul>
-						<li>I designed the chassis and suspension for Stanford's URC team.</li>
+						<li>I designed the chassis and suspension for Stanford's <a href="https://urc.marssociety.org/"
+								target="_blank">University Rover Challenge</a> team.</li>
 						<li>The suspension consists of a series of linkages that set the height of the rover's six
 							wheels
 							in response to changing terrain below the rover.</li>
@@ -248,7 +256,7 @@
 							wheels to allow the rover to glide over large obstacles.</li>
 						<ul>
 							<li>The mechanical advantage of the linkages change with height, allocating more weight
-								from lower to higher-positioned wheels.</li>
+								from lower- to higher-positioned wheels.</li>
 							<li>Weight is moved away from wheels that need to climb up an obstacle to wheels that have
 								already climbed that obstacle.</li>
 						</ul>
@@ -259,11 +267,14 @@
 							<li>Changing forces on the chassis do not induce movement in the suspension.</li>
 							<li>This results in a rigid platform for the arm to operate off of.</li>
 						</ul>
+						<ul>This chassis is an improvement on my 2019 chassis, which carried our rover to a 3rd place
+							finish internationally. The 2020 rover never got to compete, as the competition did not run
+							during the pandemic.</ul>
 					</ul>
 					<h3>My Contribution</h3>
 					<ul>
 						<li>This is a novel suspension that I invented, designed, and fabricated.</li>
-						<li>While this rover was the work of a team of around 8 people, this chassis was solely my
+						<li>While this rover was the work of a team, this chassis was solely my
 							responsibility.</li>
 						<li>Team size: 8</li>
 					</ul>

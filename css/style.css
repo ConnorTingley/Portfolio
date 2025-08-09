@@ -9,6 +9,10 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	color: #366d91;
+}
+
 h1 {
 	color: #77685F;
 	font-size: max(36px, 2.8vw);
